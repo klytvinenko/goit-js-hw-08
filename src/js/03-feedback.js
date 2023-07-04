@@ -1,9 +1,9 @@
 // 
-const throttle = require('lodash.throttle');
+import throttle from 'lodash.throttle';
 const form = document.querySelector('.feedback-form');
 const btn = document.querySelector('button');
 const LS_KEY = 'feedback-form-state';
-const obj = {};
+let obj = {};
 
 console.log('ok');
 
