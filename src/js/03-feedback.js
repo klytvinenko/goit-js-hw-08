@@ -10,7 +10,7 @@ console.log('ok');
 form.addEventListener('input', throttle(onIput, 500));
 form.addEventListener('submit', onSubmit);
 
-obj = JSON.parse(localStorage.getItem(LS_KEY));
+obj = JSON.parse(localStorage.getItem(LS_KEY)) ?? {};
 fillForm();
 function fillForm() {
     if(obj) {
